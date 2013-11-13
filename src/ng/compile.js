@@ -1368,6 +1368,8 @@ function $CompileProvider($provide) {
                 mode = match[1], // @, =, or &
                 lastValue,
                 parentGet, parentSet;
+                
+            // attrName = attrName.toLowerCase();
 
             scope.$$isolateBindings[scopeName] = mode + attrName;
 
